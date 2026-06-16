@@ -8,7 +8,7 @@ Indie developer. I build CLI tools that solve real problems and Excel templates 
 
 **[Quira](https://ko-fi.com/quirashop)** — Excel templates for founders, freelancers, and anyone who wants their work and life more organized.
 
-**CLI & dev tools** — Small, focused tools built in Python. Nothing bloated.
+**CLI & dev tools** — Small, focused tools built in Python.
 
 ---
 
