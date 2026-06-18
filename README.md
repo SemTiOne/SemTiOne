@@ -8,7 +8,7 @@ Indie developer. I build CLI tools that solve real problems and Excel templates 
 
 **[Quira](https://ko-fi.com/quirashop)** — Excel templates for founders, freelancers, and anyone who wants their work and life more organized.
 
-**CLI & dev tools** — Small, focused tools built in Python.
+**CLI & dev tools** — Small, focused tools built in Python. Nothing bloated.
 
 ---
 
@@ -17,6 +17,18 @@ Indie developer. I build CLI tools that solve real problems and Excel templates 
 ```
 Python · MySQL · JavaScript · C++ · Excel (VBA / openpyxl)
 ```
+
+---
+
+## Projects
+
+| Repo | What it does |
+|---|---|
+| [standup-bot](https://github.com/SemTiOne/standup-bot) | Generate daily standup summaries from git history using local (Ollama) or cloud (Groq) LLMs · v0.2.4 · CI · 148 tests |
+| [env-auditor](https://github.com/SemTiOne/env-auditor) | Audit env variable consistency across a codebase — finds undocumented, stale, and empty vars · v0.1.4 · PyPI · 116 tests |
+| [json-prompt-formatter](https://github.com/SemTiOne/json_prompt_formatter) | Convert text prompts into structured JSON/JSONL for LLM API workflows |
+| [personal-finance-tracker](https://github.com/SemTiOne/personal-finance-tracker) | CLI app for tracking personal finances, budgets, and generating financial reports |
+| [url-shortener](https://github.com/SemTiOne/url-shortener) | CLI URL shortener with click tracking, built with Python + MySQL |
 
 ---
 
