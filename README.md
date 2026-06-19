@@ -26,8 +26,6 @@ Python · MySQL · JavaScript · C++ · Excel (VBA / openpyxl)
 |---|---|
 | [standup-bot](https://github.com/SemTiOne/standup-bot) | Generate daily standup summaries from git history using local (Ollama) or cloud (Groq) LLMs · v0.2.4 · CI · 148 tests |
 | [env-auditor](https://github.com/SemTiOne/env-auditor) | Audit env variable consistency across a codebase — finds undocumented, stale, and empty vars · v0.1.4 · PyPI · 116 tests |
-| [json-prompt-formatter](https://github.com/SemTiOne/json_prompt_formatter) | Convert text prompts into structured JSON/JSONL for LLM API workflows |
-| [personal-finance-tracker](https://github.com/SemTiOne/personal-finance-tracker) | CLI app for tracking personal finances, budgets, and generating financial reports |
 | [url-shortener](https://github.com/SemTiOne/url-shortener) | CLI URL shortener with click tracking, built with Python + MySQL |
 
 ---
