@@ -1,14 +1,6 @@
 # Dane Parin
 
-Indie developer. I build CLI tools that solve real problems and Excel templates that people actually use.
-
----
-
-## What I'm building
-
-**[Quira](https://ko-fi.com/quirashop)** — Excel templates for founders, freelancers, and anyone who wants their work and life more organized.
-
-**CLI & dev tools** — Small, focused tools built in Python. Nothing bloated.
+Indie developer.
 
 ---
 
@@ -40,4 +32,4 @@ Python · MySQL · JavaScript · C++ · Excel (VBA / openpyxl)
 
 ## Find me
 
-[Twitter / X](https://twitter.com/DParin28178) · [Ko-fi](https://ko-fi.com/quirashop) · [Payhip](https://payhip.com/quira)
+[Twitter / X](https://twitter.com/DParin28178)
