@@ -16,7 +16,7 @@ CI runs ruff, mypy, bandit, and pip-audit before any test executes, across four 
 
 `Python 3.10+` · zero runtime dependencies
 
-It scans source trees it doesn't control, so it's written defensively on purpose: lines over 2000 characters are skipped to avoid ReDoS, symlinks are never followed, and `--exclude` paths that try to escape the scan root are rejected outright. 116 tests, an 85% coverage floor enforced in CI, matrix-tested across three operating systems and three Python versions.
+It scans source trees it doesn't control, so it's written defensively on purpose. Lines over 2000 characters are skipped to avoid ReDoS, symlinks are never followed, and `--exclude` paths that try to escape the scan root are rejected outright. 116 tests, an 85% coverage floor enforced in CI, matrix-tested across three operating systems and three Python versions.
 
 ---
 
