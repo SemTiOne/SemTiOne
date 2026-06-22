@@ -1,35 +1,31 @@
 # Dane Parin
 
-Indie developer.
+Indie dev. Two CLI tools I currently maintain, both open source.
 
 ---
 
-## Stack
+**[standup-bot](https://github.com/SemTiOne/standup-bot)** — turns git history into a daily standup, using a local LLM (Ollama) or a free cloud one (Groq) if you'd rather not run a model locally.
 
-```
-Python · MySQL · JavaScript · C++ · Excel (VBA / openpyxl)
-```
+`Python 3.10–3.13` · `SQLite, WAL mode` · `Rich`
 
----
+v0.2.3 shipped with a real bug: `options={"timeout": 60}` was passed as a model parameter instead of an HTTP timeout, so Ollama silently ignored it and requests could hang indefinitely. Found it, fixed it by moving the timeout into `ollama.Client(...)`, and wrote a regression test so it can't come back quietly. It's in the changelog under v0.2.3, dated the day it was fixed.
 
-## Projects
+CI runs ruff, mypy, bandit, and pip-audit before any test executes, across four Python versions. Fourteen test modules. All SQL parameterized, all output paths pass through redaction before they reach a log or a terminal.
 
-| Repo | What it does |
-|---|---|
-| [standup-bot](https://github.com/SemTiOne/standup-bot) | Generate daily standup summaries from git history using local (Ollama) or cloud (Groq) LLMs · v0.2.4 · CI · 148 tests |
-| [env-auditor](https://github.com/SemTiOne/env-auditor) | Audit env variable consistency across a codebase — finds undocumented, stale, and empty vars · v0.1.4 · PyPI · 116 tests |
-| [url-shortener](https://github.com/SemTiOne/url-shortener) | CLI URL shortener with click tracking, built with Python + MySQL |
+**[env-auditor](https://github.com/SemTiOne/env-auditor)** — diffs the env vars your code actually references against your `.env.example`, across six languages. Tells you what's undocumented, what's stale, and what has no default.
+
+`Python 3.10+` · zero runtime dependencies
+
+It scans source trees it doesn't control, so it's written defensively on purpose: lines over 2000 characters are skipped to avoid ReDoS, symlinks are never followed, and `--exclude` paths that try to escape the scan root are rejected outright. 116 tests, an 85% coverage floor enforced in CI, matrix-tested across three operating systems and three Python versions.
 
 ---
 
-## Stats
+**Stats**
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SemTiOne&show_icons=true&hide_border=true&bg_color=FBFAF7&title_color=161614&text_color=A09E99&icon_color=B08A3A&hide=issues)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SemTiOne&show_icons=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF&hide=issues)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=SemTiOne&layout=compact&hide_border=true&bg_color=FBFAF7&title_color=161614&text_color=A09E99)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=SemTiOne&layout=compact&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9)
 
 ---
 
-## Find me
-
-[Twitter / X](https://twitter.com/DParin28178)
+[X / Twitter](https://twitter.com/DParin28178) — build-in-public updates, mostly.
