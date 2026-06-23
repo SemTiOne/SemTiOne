@@ -28,4 +28,4 @@ It scans source trees it doesn't control, so it's written defensively on purpose
 
 ---
 
-[X / Twitter](https://twitter.com/DParin28178) — build-in-public updates, mostly.
+[X / Twitter](https://twitter.com/DParin28178) — build-in-public updates.
