@@ -22,7 +22,7 @@ It scans source trees it doesn't control, so it's written defensively on purpose
 
 **Stats**
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SemTiOne&show_icons=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SemTiOne&show_icons=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF&hide=issues)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=SemTiOne&layout=compact&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9)
 
