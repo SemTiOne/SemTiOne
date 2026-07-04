@@ -24,7 +24,7 @@ It scans source trees it doesn't control, so it's written defensively on purpose
 ![Stats](./profile/stats.svg)
 ![Top Languages](./profile/top-langs.svg)
 
-**Open Source Contributions** — Merged PRs across repositories: [full list](https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3ASemTiOne+archived%3Afalse).
+**Open source contributions** — three fixes merged into [Termstory](https://github.com/bitflicker64/Termstory) on three consecutive days (Jun 29 – Jul 1, 2026), each closing a tracked issue in a different subsystem: circuit breaker limits ([#179](https://github.com/bitflicker64/Termstory/pull/179), closes #118), clustering threshold ([#186](https://github.com/bitflicker64/Termstory/pull/186), closes #119), and SQLite connection timeout ([#187](https://github.com/bitflicker64/Termstory/pull/187), closes #123). The circuit breaker fix went through five rounds of automated review before merge, catching a race condition in the config cache and a silent-mutation trap in the backward-compatibility shim along the way. Also shipped two bug fixes and a full SPF/DKIM/DMARC email security feature to [AynOps](https://github.com/AynOps/AynOps), and added ruff linting to CI, along with fixing the violations it caught, in [thumper](https://github.com/jestasecurity/thumper/pull/177). More merged PRs across other repositories: [full list](https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3ASemTiOne+archived%3Afalse).
 
 ---
 
