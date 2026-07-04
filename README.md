@@ -24,7 +24,7 @@ It scans source trees it doesn't control, so it's written defensively on purpose
 ![Stats](./profile/stats.svg)
 ![Top Languages](./profile/top-langs.svg)
 
-**Open Source Contributions — Merged PRs across repositories: [full list](https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3ASemTiOne+archived%3Afalse).
+**Open Source Contributions** — Merged PRs across repositories: [full list](https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3ASemTiOne+archived%3Afalse).
 
 ---
 
