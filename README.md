@@ -1,6 +1,6 @@
 # Dane Parin
 
-Indie dev. Two CLI tools I currently maintain, both open source.
+Backend & DevOps Engineer. I build CLI tools, databases, automations, and containerized applications using Python, Java, C++, Docker, CI/CD, and MySQL. Two CLI tools I currently maintain, both open source.
 
 ---
 
