@@ -20,7 +20,7 @@ Written defensively since it scans code it doesn't control: long lines are skipp
 
 `Python` · GitHub Action + PyPI CLI
 
-Shipped broken: the Action doubled its own path and failed every run with exit code 2 before classifying anything, caught immediately by dogfooding it on this repo's own PRs and fixed in v0.1.1. Published to PyPI via OIDC, no stored token; secrets are stripped from every subprocess call before it touches git.
+Shipped broken: the Action doubled its own path and failed every run with exit code 2 before classifying anything, caught immediately by dogfooding it on this repo's own PRs and fixed in v0.1.1. Published to PyPI via OIDC; secrets are stripped from every subprocess call before it touches git.
 
 Also built [position-evaluator](https://github.com/SemTiOne/position-evaluator) for a weekend hackathon — a MySQL-backed Flask app using Gemini structured output, where the lessons on getting reliable output out of an LLM led directly to chess-review-bot's classifier above being deterministic instead.
 
@@ -28,7 +28,7 @@ Also built [position-evaluator](https://github.com/SemTiOne/position-evaluator) 
 
 **Open source contributions** — merged three fixes into [Termstory](https://github.com/bitflicker64/Termstory) on three consecutive days, each in a different subsystem. The circuit breaker fix alone went through five rounds of review, catching a race condition and a silent mutation trap in a backward-compat shim along the way. Two more fixes followed over the next two weeks.
 
-Root-caused four separate bugs behind [AynOps](https://github.com/AynOps/AynOps)' header analyzer disagreeing with browser DevTools, confirmed against a live production site.
+Root-caused four separate bugs behind [AynOps](https://github.com/AynOps/AynOps)' header analyzer disagreeing with browser DevTools.
 
 Hardened [composable-data-stack](https://github.com/RonaldHensbergen/composable-data-stack)'s Docker image; pinned to a digest, moved off root; validated by actually building and running it, and separately closed a `.env` leak into the build context.
 
