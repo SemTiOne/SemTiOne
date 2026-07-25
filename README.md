@@ -30,7 +30,7 @@ Also built [position-evaluator](https://github.com/SemTiOne/position-evaluator) 
 
 Root-caused four separate bugs behind [AynOps](https://github.com/AynOps/AynOps)' header analyzer disagreeing with browser DevTools, confirmed against a live production site.
 
-Hardened [composable-data-stack](https://github.com/RonaldHensbergen/composable-data-stack)'s Docker image — pinned to a digest, moved off root — validated by actually building and running it, and separately closed a `.env` leak into the build context.
+Hardened [composable-data-stack](https://github.com/RonaldHensbergen/composable-data-stack)'s Docker image; pinned to a digest, moved off root; validated by actually building and running it, and separately closed a `.env` leak into the build context.
 
 Fixed a session-hijack path in [thumper](https://github.com/jestasecurity/thumper) and added its ruff linting. Three merged fixes to [odys](https://github.com/ramirocrc/odys), an energy-optimization model, including one where the linked issue's own suggested fix was mathematically wrong. More merged PRs: [full list](https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3ASemTiOne+archived%3Afalse).
 
