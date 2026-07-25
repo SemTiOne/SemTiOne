@@ -19,7 +19,7 @@ jobs:
           card: stats
           options: username=SemTiOne&show_icons=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF&hide=issues
           path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN }}
 
       - name: Generate top languages card
         uses: stats-organization/github-readme-stats-action@v2
@@ -27,7 +27,7 @@ jobs:
           card: top-langs
           options: username=SemTiOne&layout=compact&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9
           path: profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN }}
 
       - name: Commit and push
         run: |
