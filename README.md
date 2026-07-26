@@ -22,7 +22,7 @@ Written defensively since it scans code it doesn't control: long lines are skipp
 
 Shipped broken: the Action doubled its own path and failed every run with exit code 2 before classifying anything, caught immediately by dogfooding it on this repo's own PRs and fixed in v0.1.1. Published to PyPI via OIDC; secrets are stripped from every subprocess call before it touches git.
 
-Also built [position-evaluator](https://github.com/SemTiOne/position-evaluator) for a weekend hackathon — a MySQL-backed Flask app using Gemini structured output, where the lessons on getting reliable output out of an LLM led directly to chess-review-bot's classifier above being deterministic instead.
+Also built [position-evaluator](https://github.com/SemTiOne/position-evaluator) for a weekend hackathon: a MySQL-backed Flask app using Gemini structured output, where the lessons on getting reliable output out of an LLM led directly to chess-review-bot's classifier above being deterministic instead.
 
 ---
 
