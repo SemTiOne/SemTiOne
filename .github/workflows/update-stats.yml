@@ -11,7 +11,7 @@ jobs:
   update-stats:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v2
