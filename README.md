@@ -1,38 +1,47 @@
-# Dane Parin
+<p align="center">
+  <img src="profile/roxy-banner.webp" alt="Roxy Migurdia">
+</p>
 
-Backend & DevOps Engineer. I build CLI tools, databases, automations, and containerized applications using Python, Java, C++, Docker, CI/CD, and MySQL. Three CLI tools I currently maintain, all open source.
+[![X](https://img.shields.io/badge/X-@DParin28178-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/DParin28178)
+[![Bluesky](https://img.shields.io/badge/Bluesky-@daneparin.bsky.social-0085FF?style=for-the-badge&logo=bluesky&logoColor=white)](https://bsky.app/profile/daneparin.bsky.social)
+[![Email](https://img.shields.io/badge/Email-emphyst80@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:emphyst80@gmail.com)
 
 ---
 
-**[standup-bot](https://github.com/SemTiOne/standup-bot)** — turns git history into a daily standup using a local LLM (Ollama) or a free cloud one (Groq).
+## Tech Stack
 
-`Python` · `SQLite, WAL mode` · `Rich`
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![CI/CD](https://img.shields.io/badge/CI/CD-4CAF50?style=for-the-badge&logo=githubactions&logoColor=white)
 
-v0.2.3 had a real bug: a timeout was passed as a model parameter instead of an HTTP timeout, so Ollama silently ignored it and requests could hang forever. Fixed by moving it into `ollama.Client(...)`, with a regression test so it stays fixed. CI gates on ruff, mypy, bandit, and pip-audit before tests run; all SQL is parameterized, and secrets like tokens and API keys are redacted from every log and terminal output.
+---
 
-**[env-auditor](https://github.com/SemTiOne/env-auditor)** — diffs the env vars your code actually references against `.env.example`, across six languages, catching what's undocumented, stale, or missing a default.
+**[standup-bot](https://github.com/SemTiOne/standup-bot)**: turns git history into a daily standup via local (Ollama) or free cloud (Groq) LLM.
+`Python` · `SQLite (WAL)` · `Rich`
+Fixed a real v0.2.3 bug (timeout passed as model param → requests hung forever) with a regression test. CI: ruff, mypy, bandit, pip-audit; SQL parameterized; secrets redacted from all output.
 
+**[env-auditor](https://github.com/SemTiOne/env-auditor)**: diffs env vars your code references against `.env.example` across six languages.
 `Python` · zero runtime dependencies
+Written defensively: skips long lines (ReDoS), never follows symlinks, `--exclude` can't escape the scan root. 141 tests, 85% coverage, three OSes × three Python versions, `mypy --strict`.
 
-Written defensively since it scans code it doesn't control: long lines are skipped to avoid ReDoS, symlinks are never followed, and `--exclude` paths can't escape the scan root. 141 tests, 85% coverage enforced in CI, tested across three OSes and three Python versions, with `mypy --strict` as a hard gate.
-
-**[chess-review-bot](https://github.com/SemTiOne/chess-review-bot)** — reviews a PR's diff and labels each file with chess Game Review vocabulary (Brilliant, Blunder...), using a deterministic rule table instead of an LLM call, reasoning documented in an ADR.
-
+**[chess-review-bot](https://github.com/SemTiOne/chess-review-bot)**: labels each PR file with chess Game Review vocabulary (Brilliant, Blunder...) via a deterministic rule table (no LLM call, reasoning in an ADR).
 `Python` · GitHub Action + PyPI CLI
+Shipped broken (Action doubled its own path, exit 2); caught by dogfooding on its own PRs, fixed in v0.1.1. Published via OIDC; secrets stripped from subprocess calls.
 
-Shipped broken: the Action doubled its own path and failed every run with exit code 2 before classifying anything, caught immediately by dogfooding it on this repo's own PRs and fixed in v0.1.1. Published to PyPI via OIDC; secrets are stripped from every subprocess call before it touches git.
+Also built [position-evaluator](https://github.com/SemTiOne/position-evaluator) for a weekend hackathon: MySQL + Flask + Gemini structured output; the LLM-reliability lessons made chess-review-bot deterministic instead.
 
-Also built [position-evaluator](https://github.com/SemTiOne/position-evaluator) for a weekend hackathon: a MySQL-backed Flask app using Gemini structured output, where the lessons on getting reliable output out of an LLM led directly to chess-review-bot's classifier above being deterministic instead.
-
----
-
-**Open source contributions** — merged three fixes into [Termstory](https://github.com/bitflicker64/Termstory) on three consecutive days, each in a different subsystem. The circuit breaker fix alone went through five rounds of review, catching a race condition and a silent mutation trap in a backward-compat shim along the way. Two more fixes followed over the next two weeks.
-
-Root-caused four separate bugs behind [AynOps](https://github.com/AynOps/AynOps)' header analyzer disagreeing with browser DevTools.
-
-Hardened [composable-data-stack](https://github.com/RonaldHensbergen/composable-data-stack)'s Docker image; pinned to a digest, moved off root; validated by actually building and running it, and separately closed a `.env` leak into the build context.
-
-Fixed a session-hijack path in [thumper](https://github.com/jestasecurity/thumper) and added its ruff linting. Three merged fixes to [odys](https://github.com/ramirocrc/odys), an energy-optimization model, including one where the linked issue's own suggested fix was mathematically wrong. More merged PRs: [full list](https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3ASemTiOne+archived%3Afalse).
+**Open source contributions**
+- **Termstory**: three fixes in three days, three subsystems; the circuit-breaker fix survived five review rounds (race condition + silent mutation trap).
+- **AynOps**: root-caused four bugs behind its header analyzer vs. browser DevTools.
+- **composable-data-stack**: hardened Docker image (pinned digest, non-root); closed a `.env` leak into the build context.
+- **thumper**: fixed a session-hijack path + added ruff linting.
+- **odys**: three fixes, incl. one where the issue's own suggested fix was mathematically wrong.
+- [Full list](https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3ASemTiOne+archived%3Afalse)
 
 ---
 
@@ -40,7 +49,3 @@ Fixed a session-hijack path in [thumper](https://github.com/jestasecurity/thumpe
 
 ![Stats](./profile/stats.svg)
 ![Top Languages](./profile/top-langs.svg)
-
----
-
-[X / Twitter](https://twitter.com/DParin28178) — build-in-public updates.
