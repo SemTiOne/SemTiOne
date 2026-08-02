@@ -2,22 +2,26 @@
   <img src="profile/roxy-banner.webp" alt="Roxy Migurdia">
 </p>
 
-[![X](https://img.shields.io/badge/X-@DParin28178-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/DParin28178)
-[![Bluesky](https://img.shields.io/badge/Bluesky-@daneparin.bsky.social-0085FF?style=for-the-badge&logo=bluesky&logoColor=white)](https://bsky.app/profile/daneparin.bsky.social)
-[![Email](https://img.shields.io/badge/Email-emphyst80@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:emphyst80@gmail.com)
+<p align="center">
+  <a href="https://x.com/DParin28178"><img src="https://img.shields.io/badge/X-@DParin28178-000?style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
+  <a href="https://bsky.app/profile/daneparin.bsky.social"><img src="https://img.shields.io/badge/Bluesky-@daneparin.bsky.social-0085FF?style=for-the-badge&logo=bluesky&logoColor=white" alt="Bluesky"></a>
+  <a href="mailto:emphyst80@gmail.com"><img src="https://img.shields.io/badge/Email-emphyst80@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
 
 ---
 
 ## Tech Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![CI/CD](https://img.shields.io/badge/CI/CD-4CAF50?style=for-the-badge&logo=githubactions&logoColor=white)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+  <img src="https://img.shields.io/badge/CI/CD-4CAF50?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI/CD">
+</p>
 
 ---
 
@@ -47,5 +51,7 @@ Also built [position-evaluator](https://github.com/SemTiOne/position-evaluator) 
 
 **Stats**
 
-![Stats](./profile/stats.svg)
-![Top Languages](./profile/top-langs.svg)
+<p align="center">
+  <img src="./profile/stats.svg" alt="Stats">
+  <img src="./profile/top-langs.svg" alt="Top Languages">
+</p>
