@@ -37,8 +37,6 @@ Written defensively: skips long lines (ReDoS), never follows symlinks, `--exclud
 `Python` · GitHub Action + PyPI CLI
 Shipped broken (Action doubled its own path, exit 2); caught by dogfooding on its own PRs, fixed in v0.1.1. Published via OIDC; secrets stripped from subprocess calls.
 
-Also built [position-evaluator](https://github.com/SemTiOne/position-evaluator) for a weekend hackathon: MySQL + Flask + Gemini structured output; the LLM-reliability lessons made chess-review-bot deterministic instead.
-
 **Open source contributions**
 - **Termstory**: three fixes in three days, three subsystems; the circuit-breaker fix survived five review rounds (race condition + silent mutation trap).
 - **AynOps**: root-caused four bugs behind its header analyzer vs. browser DevTools.
