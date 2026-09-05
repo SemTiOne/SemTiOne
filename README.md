@@ -25,25 +25,13 @@
 
 ---
 
-**[standup-bot](https://github.com/SemTiOne/standup-bot)**: turns git history into a daily standup via local (Ollama) or free cloud (Groq) LLM.
-`Python` · `SQLite (WAL)` · `Rich`
-Fixed a real v0.2.3 bug (timeout passed as model param → requests hung forever) with a regression test. CI: ruff, mypy, bandit, pip-audit; SQL parameterized; secrets redacted from all output.
+**[standup-bot](https://github.com/SemTiOne/standup-bot)**: turns git history into a daily standup via Ollama or Groq. `Python` · `SQLite` · `Rich`
 
-**[env-auditor](https://github.com/SemTiOne/env-auditor)**: diffs env vars your code references against `.env.example` across six languages.
-`Python` · zero runtime dependencies
-Written defensively: skips long lines (ReDoS), never follows symlinks, `--exclude` can't escape the scan root. 141 tests, 85% coverage, three OSes × three Python versions, `mypy --strict`.
+**[env-auditor](https://github.com/SemTiOne/env-auditor)**: diffs env refs against `.env.example` across six languages. `Python`, zero-dep
 
-**[chess-review-bot](https://github.com/SemTiOne/chess-review-bot)**: labels each PR file with chess Game Review vocabulary (Brilliant, Blunder...) via a deterministic rule table (no LLM call, reasoning in an ADR).
-`Python` · GitHub Action + PyPI CLI
-Shipped broken (Action doubled its own path, exit 2); caught by dogfooding on its own PRs, fixed in v0.1.1. Published via OIDC; secrets stripped from subprocess calls.
+**[chess-review-bot](https://github.com/SemTiOne/chess-review-bot)**: labels PR files with chess-review terms via rule table, LLM optional. `Python` · Action + CLI
 
-**Open source contributions**
-- **Termstory**: three fixes in three days, three subsystems; the circuit-breaker fix survived five review rounds (race condition + silent mutation trap).
-- **AynOps**: root-caused four bugs behind its header analyzer vs. browser DevTools.
-- **composable-data-stack**: hardened Docker image (pinned digest, non-root); closed a `.env` leak into the build context.
-- **thumper**: fixed a session-hijack path + added ruff linting.
-- **odys**: three fixes, incl. one where the issue's own suggested fix was mathematically wrong.
-- [Full list](https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3ASemTiOne+archived%3Afalse)
+**Merged PRs**: [Full list](https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3ASemTiOne+archived%3Afalse)
 
 ---
 
