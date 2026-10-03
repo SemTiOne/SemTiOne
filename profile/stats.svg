@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Dane Parin&#39;s GitHub Stats, Rank: B+</title>
-        <desc id="descId">Total Stars Earned: 11, Total Commits  (last year) : 717, Total PRs: 197, Contributed to (last year): 28</desc>
+        <desc id="descId">Total Stars Earned: 11, Total Commits  (last year) : 717, Total PRs: 198, Contributed to (last year): 28</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 101.57912054029286;
+        stroke-dashoffset: 101.52276062654212;
       }
     }
   
@@ -199,7 +199,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs"
-      >197</text>
+      >198</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
